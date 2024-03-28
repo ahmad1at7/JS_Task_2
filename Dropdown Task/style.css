@@ -1,0 +1,26 @@
+body{
+    margin: 100px;
+    padding-left: 10px;
+    background:white;
+
+}
+h1{
+    color:blue;
+}
+select{
+    background-color:white;
+    color: blueviolet;
+    font-size: large;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    height: 60px;
+    width: 400px;
+    border-radius: 5px;
+    border-color: gray;
+    margin-bottom: 20px;
+}
+select:hover{
+    background-color: lightcyan;
+    color: black;
+}

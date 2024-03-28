@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <h1>Select Your Country</h1>
+        <select id="country" onchange="populatestates()">
+            <option value="" selected disabled>---select your country--</option>
+            <option value="india" >India</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="usa">USA</option>
+        </select><br><br>
+        <select id="states" onchange="populatecities()">
+            <option value="" selected disabled>---select your state--</option>
+        </select><br><br>
+        <select id="city">
+            <option value="" selected disabled>---select your City--</option>
+        </select>    
+    </center>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
