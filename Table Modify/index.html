@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rsponsive Data-Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="span4">
+        <input type="" class="search-field" placeholder="search" id="search" onkeyup="searchFunction()">
+    </div>
+    <span class="span1">
+        <h1 class="dataheading">Data Table</h1>
+    </span>
+    <span class="span2">
+        <button class="btn btn-primary" data-ba-toggle="model" data-bs-target="userForm">Add product</button>
+    </span>
+    <main class="table table-sortable">
+        <section class="table_header">
+            <div class="container"> 
+        </section>
+        </div>
+        <section class="table_body">
+            <table id="myTable">
+                <thead>
+                    <tr>
+                        <th class="increse-width"><i class="fa-solid fa-square-check"></i></th>
+                        <th>#</th>
+                        <th>product Vendor</th>
+                        <th>product Name</th>
+                        <th>product Title</th>
+                        <th>Product Description</th>
+                        <th>In Stock</th>
+                        <th>buying Price</th>
+                        <th>sale Price</th>
+                        <th>purchase Quantity</th>
+                        <th>product Type</th>
+                        <th>shipping Rates</th>
+                        <th>refill Limit</th>
+                        <th>product Location Address</th>
+                        <th>actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>1</td>
+                        <td><img src="vendor images/download.jfif">Adrew</td>
+                        <td>
+                            <p class="product mobile">Mobilie</p>
+                        </td>
+                        <td>
+                            <p>Vivo- y21</p>
+                        </td>
+                        <td>
+                            <p>it has 128gb storage, 4gb ram and 5000mAh battery.</p>
+                        </td>
+                        <td>50</td>
+                        <td>$120.00</td>
+                        <td><strong>$105.00</strong></td>
+                        <td>10</td>
+                        <td>Android mobile</td>
+                        <td>$14.50</td>
+                        <td>30</td>
+                        <td>123 Main st,cityvila</td>
+                        <td><button class="btn1"><i class="fa-regular fa-pen-to-square"></i></button>
+                            <button class="btn2"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>2</td>
+                        <td><img src="vendor images/vendor5.jfif">Jonson</td>
+                        <td>
+                            <p class="product jacket">Jacket</p>
+                        </td>
+                        <td>
+                            <p>mens' leather jackets</p>
+                        </td>
+                        <td>
+                            <p>This black color jacket are of good quality.</p>
+                        </td>
+                        <td>70</td>
+                        <td>$30.00</td>
+                        <td><strong>$25.00</strong></td>
+                        <td>90</td>
+                        <td>men's accesries</td>
+                        <td>$4.50</td>
+                        <td>30</td>
+                        <td>123 Main st,cityvila</td>
+                        <td><button class="btn1"><i class="fa-regular fa-pen-to-square"></i></button>
+                            <button class="btn2"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>3</td>
+                        <td><img src="vendor images/vendor4.jfif">Mike</td>
+                        <td>
+                            <p class="product tshirt">T-Shirt</p>
+                        </td>
+                        <td>
+                            <p>navy blue t-shirt</p>
+                        </td>
+                        <td>
+                            <p>This T-shirt are of good quality.</p>
+                        </td>
+                        <td>90</td>
+                        <td>$20.00</td>
+                        <td><strong>$18.00</strong></td>
+                        <td>10</td>
+                        <td>men's accesries</td>
+                        <td>$4.50</td>
+                        <td>30</td>
+                        <td>123 Main st,cityvila</td>
+                        <td><button class="btn1"><i class="fa-regular fa-pen-to-square"></i></button>
+                            <button class="btn2"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>4</td>
+                        <td><img src="vendor images/vendor3.jfif">Asgar</td>
+                        <td>
+                            <p class="product shoes">Shoes</p>
+                        </td>
+                        <td>
+                            <p>white men's shoes</p>
+                        </td>
+                        <td>
+                            <p>This white color men's shoes are of good quality.</p>
+                        </td>
+                        <td>120</td>
+                        <td>$60.00</td>
+                        <td><strong>$55.00</strong></td>
+                        <td>10</td>
+                        <td>men's accesries</td>
+                        <td>$4.50</td>
+                        <td>30</td>
+                        <td>123 Main st,cityvila</td>
+                        <td><button class="btn1"><i class="fa-regular fa-pen-to-square"></i></button>
+                            <button class="btn2"> <i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>5</td>
+                        <td><img src="vendor images/vedor6.jfif">Nadeem</td>
+                        <td>
+                            <p class="product jeans">Trozer</p>
+                        </td>
+                        <td>
+                            <p>black jeans</p>
+                        </td>
+                        <td>
+                            <p>This man's black jeans are of good quality.</p>
+                        </td>
+                        <td>150</td>
+                        <td>$05.00</td>
+                        <td><strong>$4.00</strong></td>
+                        <td>10</td>
+                        <td>men's accesries</td>
+                        <td>$4.50</td>
+                        <td>30</td>
+                        <td>123 Main st,cityvila</button>
+                        <td><button class="btn1"><i class="fa-regular fa-pen-to-square ml-5"></i></button>
+                            <button class="btn2"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>6</td>
+                        <td><img src="vendor images/vendor2.jfif">Jack</td>
+                        <td>
+                            <p class="product watch">Wrist watch</p>
+                        </td>
+                        <td>
+                            <p>grey wrist watch</p>
+                        </td>
+                        <td>
+                            <p>This grey wrist watch are of good quality.</p>
+                        </td>
+                        <td>180</td>
+                        <td>$80.00</td>
+                        <td><strong>$75.00</strong></td>
+                        <td>10</td>
+                        <td>men's accesries</td>
+                        <td>$4.50</td>
+                        <td>30</td>
+                        <td>123 Main st,cityvila</td>
+                        <td><button class="btn1"><i class="fa-regular fa-pen-to-square ml-5"></i></button>
+                            <button class="btn2"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>7</td>
+                        <td><img src="vendor images/vedor6.jfif">Mozam</td>
+                        <td>
+                            <p class="product jeans">Charger</p>
+                        </td>
+                        <td>
+                            <p>black jeans</p>
+                        </td>
+                        <td>
+                            <p>This man's black jeans are of good quality.</p>
+                        </td>
+                        <td>10</td>
+                        <td>$05.00</td>
+                        <td><strong>$4.00</strong></td>
+                        <td>10</td>
+                        <td>men's accesries</td>
+                        <td>$4.50</td>
+                        <td>30</td>
+                        <td>123 Main st,cityvila</td>
+                        <td><button class="btn1"><i class="fa-regular fa-pen-to-square ml-5"></i></button>
+                            <button class="btn2"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>8</td>
+                        <td><img src="vendor images/vedor6.jfif">Sakib</td>
+                        <td>
+                            <p class="product jeans">Tie</p>
+                        </td>
+                        <td>
+                            <p>Tie</p>
+                        </td>
+                        <td>
+                            <p>This man's black jeans are of good quality.</p>
+                        </td>
+                        <td>35</td>
+                        <td>$05.00</td>
+                        <td><strong>$4.00</strong></td>
+                        <td>10</td>
+                        <td>men's accesries</td>
+                        <td>$4.50</td>
+                        <td>30</td>
+                        <td>123 Main st,cityvila</td>
+                        <td>
+                            <button class="btn1"><i class="fa-regular fa-pen-to-square ml-5"></i></button>
+                            <button class="btn2"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>9</td>
+                        <td><img src="vendor images/vedor6.jfif">Raza</td>
+                        <td>
+                            <p class="product jeans">Sweater</p>
+                        </td>
+                        <td>
+                            <p>black jeans</p>
+                        </td>
+                        <td>
+                            <p>This man's black jeans are of good quality.</p>
+                        </td>
+                        <td>85</td>
+                        <td>$05.00</td>
+                        <td><strong>$4.00</strong></td>
+                        <td>70</td>
+                        <td>men's accesries</td>
+                        <td>$4.50</td>
+                        <td>30</td>
+                        <td>123 Main st,cityvila</td>
+                        <td><button class="btn1"><i class="fa-regular fa-pen-to-square ml-5"></i></button>
+                            <button class="btn2"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <!-- <div class="model" id="userForm">
+        <div class="model-dialog model-dialog-centered model-lg">
+            <div class="model-content">
+                <div class="model-header">
+                    <h4 class="model-title">Fill The Form</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="model" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <script src="script.js"></script>
+</body>
+
+</html>

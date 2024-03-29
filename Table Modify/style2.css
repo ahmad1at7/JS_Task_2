@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* To add background image and make it center */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+}
+
+search-field{
+  padding-left: 250px;
+ 
+}
+/* To add color and blur effect on the main table */
+.table{
+  margin-top: 50px;
+}
+main.table {
+  width: 92vw;
+  height: 90vh;
+  background-color: #fff5;
+
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0.4rem 0.8rem #0005;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+/* To add different color and padding to header of table */
+
+.table_header {
+  width: 100%;
+  height: 10%;
+  background-color:darkblue;
+  padding: 0.8rem 1rem;
+  color: white;
+}
+
+/* To add some features on table body */
+
+.table_body {
+  width: 96%;
+  max-height: calc(89% - 1.6rem);
+  background-color: #fffb;
+
+  margin: 0.8rem auto;
+  border-radius: 0.6rem;
+  overflow: auto;
+}
+/* to add functionality of scroll in table body */
+
+.table_body::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+/* to add functionality of scroll in table body */
+
+.table_body::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: #0004;
+  visibility: hidden;
+}
+/* To make the scroll bar visible when hover on it */
+
+.table_body:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+/* //image which we put in vendors sections */
+td img {
+  width: 36px;
+  height: 36px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+
+  vertical-align: middle;
+}
+
+/* To make table head stick so if we scroll hte table the downward table heading move with it  will stick */
+
+thead th {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #4d09edfe;
+  color: white;
+}
+
+/* to give the stripped color to row */
+
+tbody tr:nth-child(even){
+    background-color: #0000000b;
+}
+tbody tr:hover{
+    background-color: rgba(154, 228, 236, 0.4);
+}
+/* to add color to the product name */
+
+.product{
+    
+    font-weight: 300;
+    border-radius: .5rem;
+    padding: .4rem;
+    text-align: center;
+}
+
+/* adding media queries  */
+
+@media (max-width =1000px){
+    td:not(:first-of-type){
+        min-width: 12.1rem;
+    }
+}
+/* to increase the width of th */
+th{
+  text-wrap: nowrap;
+}
+
+/* This is to add two buttons and heading of table in a line */
+.container{
+  position: relative;
+}
+.span1, .span2, .span3, .span4{
+  position: absolute;
+}
+.span1{
+  z-index: 4;
+  top: 52px;
+  left: 80px;
+}
+.dataheading{   
+  color: white;
+}
+.span2{
+  z-index: 2;
+  top: 08px;
+  left: 1030px;
+  
+}
+.span3{
+  z-index: 1;
+  top: 0px;
+}
+.span4{
+  z-index: 3;
+  top: 10px;
+  left: 230px;
+  width: 200px;
+  height: 200px;
+}
+
+/* The formatting applied to the buttons which are on top */
+.btn{
+  
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 2px white;
+  font-weight: bold;
+}
+
+/* sorting icon */
+.table-sortable th{
+  cursor: pointer;
+}
+
+.table-sortable .th-sort-asc::after{
+  content: "\25b4";
+}  
+.table-sortable .th-sort-desc::after{
+  content: "\25be";
+}  
+.table-sortable .th-sort-asc::after,
+.table-sortable .th-sort-desc::after{
+  margin-left: 5px;
+}
+.table-sortable .th-sort-asc,
+.table-sortable .th-sort-desc{
+  background: rgb(0,0,0,0.1);
+};
+.btn1{
+  background-color: rgb(3, 3, 230);
+  margin: 5px;
+}
+
+
+
+.mytable, .model{
+  position: relative;
+}
+.mytable{
+  position: absolute;
+  z-index: -1;
+}
+.model{
+  position: absolute;
+  z-index: 1;
+  background-color: gray;
+  width: 500px;
+}
